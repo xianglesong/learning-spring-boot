@@ -24,6 +24,7 @@
 
 	<modules>
 		<module>learning-spring-boot-helloworld</module>
+		<module>learning-spring-boot-profile</module>
 	</modules>
 
 </project>

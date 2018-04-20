@@ -9,7 +9,6 @@
 	</parent>
 	<artifactId>learning-spring-boot-helloworld</artifactId>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

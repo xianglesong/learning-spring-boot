@@ -12,6 +12,7 @@ public class SampleController {
   @RequestMapping("/")
   @ResponseBody
   String home() {
+    System.out.print("time:" + System.currentTimeMillis());
     return "Hello World!";
   }
 

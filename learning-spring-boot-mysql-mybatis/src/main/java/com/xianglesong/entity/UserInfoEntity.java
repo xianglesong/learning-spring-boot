@@ -9,30 +9,30 @@ public class UserInfoEntity implements Serializable {
   private String passWord;
 
   public Long getId() {
-      return id;
+    return id;
   }
 
   public void setId(Long id) {
-      this.id = id;
+    this.id = id;
   }
 
   public String getPassWord() {
-      return passWord;
+    return passWord;
   }
 
   public void setPassWord(String passWord) {
-      this.passWord = passWord;
+    this.passWord = passWord;
   }
 
   public static long getSerialVersionUID() {
-      return serialVersionUID;
+    return serialVersionUID;
   }
 
   public String getUserName() {
-      return userName;
+    return userName;
   }
 
   public void setUserName(String userName) {
-      this.userName = userName;
+    this.userName = userName;
   }
 }

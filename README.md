@@ -40,7 +40,7 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  mysql: mysql的JPA实例。
     *  mysql-mybatis: mysql的mybatis的annotation实例。
     *  redis: redis实例。
-    *  rabbitmq: rabbitmq实例，包括接收和发送-0品牌品牌破，。
+    *  rabbitmq: rabbitmq实例，包括接收和发送-0和异步传输，。
     
  ### [视频课程地址：] (http://study.163.com/instructor/825396.htm)
     

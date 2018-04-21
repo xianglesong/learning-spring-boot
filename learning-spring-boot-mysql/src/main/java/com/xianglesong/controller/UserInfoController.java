@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.xianglesong.entity.UserInfo;
 import com.xianglesong.repository.UserInfoRepository;
+import com.xianglesong.service.UserInfoService;
 
 @RestController
 public class UserInfoController {
 
   @Autowired
-  UserInfoRepository userInfoRepository;
+  UserInfoService userInfoService;
 
   // http://localhost:8080/getUsers?username=test&password=pwd
   @RequestMapping("/getUsers")
@@ -25,7 +26,7 @@ public class UserInfoController {
     String username = request.getParameter("username");
     String password = request.getParameter("password");
 
-    List<UserInfo> users = userInfoRepository.findByQ(username, password);
+    List<UserInfo> users = userInfoService.findByQ(username, password);
     // users = userInfoRepository.findAll();
     return users;
   }

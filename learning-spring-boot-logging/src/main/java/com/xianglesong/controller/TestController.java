@@ -21,6 +21,7 @@ public class TestController {
     System.out.println(System.currentTimeMillis());
     String result = "result: " + user + " and corp name: " + corpName;
     logger.info("result {}", result);
+    logger.error("exp", new RuntimeException("re"));
     return result;
   }
 

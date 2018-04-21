@@ -19,12 +19,11 @@ import lombok.extern.slf4j.Slf4j;
 // @Slf4j
 public class KafkaReceiver {
 
-  @KafkaListener(id = "id1", topics = "tester")
-  public void listen4ack(@Payload String message, Acknowledgment ack) {
+  @KafkaListener(id = "id1", topics = "tester1")
+  public void listen4ack(@Payload String message) {
     Gson gson = new Gson();
     Message msg = gson.fromJson(message.toString(), Message.class);
     System.out.println("------------------ message =" + message);
     System.out.println("msg payload: " + msg.getMsg());
-    ack.acknowledge();
   }
 }

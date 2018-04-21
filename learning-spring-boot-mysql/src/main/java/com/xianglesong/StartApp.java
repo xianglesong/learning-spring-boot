@@ -9,8 +9,6 @@ import org.springframework.boot.system.ApplicationPidFileWriter;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class,
-    HibernateJpaAutoConfiguration.class})
 public class StartApp {
 
   public static void main(String[] args) {

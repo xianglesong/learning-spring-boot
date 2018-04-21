@@ -26,6 +26,7 @@
 		<module>learning-spring-boot-helloworld</module>
 		<module>learning-spring-boot-profile</module>
 		<module>learning-spring-boot-logging</module>
+		<module>learning-spring-boot-tomcat</module>
 	</modules>
 
 </project>

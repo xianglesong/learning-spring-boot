@@ -1,10 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.xiangleosng</groupId>
-	<artifactId>learning-spring-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+
+	<artifactId>learning-spring-boot-kafka</artifactId>
+
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -22,19 +21,35 @@
 		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 	</properties>
 
-	<modules>
-		<module>learning-spring-boot-helloworld</module>
-		<module>learning-spring-boot-profile</module>
-		<module>learning-spring-boot-logging</module>
-		<module>learning-spring-boot-tomcat</module>
-		<module>learning-spring-boot-actuator</module>
-		<module>learning-spring-boot-mysql</module>
-		<module>learning-spring-boot-redis</module>
-		<module>learning-spring-boot-rabbitmq</module>
-		<module>learning-spring-boot-rabbitmq-async</module>
-		<module>learning-spring-boot-mongodb</module>
-		<module>learning-spring-boot-elasticsearch</module>
-		<module>learning-spring-boot-kafka</module>
-	</modules>
+	<dependencies>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.12</artifactId>
+			<version>0.10.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+			<version>1.1.1.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
 </project>

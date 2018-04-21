@@ -36,6 +36,7 @@
 		<module>learning-spring-boot-elasticsearch</module>
 		<module>learning-spring-boot-kafka</module>
 		<module>learning-spring-boot-test</module>
+		<module>learning-spring-boot-release</module>
 	</modules>
 
 </project>

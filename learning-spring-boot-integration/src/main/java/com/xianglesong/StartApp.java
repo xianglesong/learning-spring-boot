@@ -9,10 +9,12 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.system.ApplicationPidFileWriter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import com.xianglesong.servlet.MyListener;
 import com.xianglesong.servlet.MyServlet;
 import com.xianglesong.servlet.TraceFilter;
 
@@ -32,6 +34,14 @@ public class StartApp {
     FilterRegistrationBean authFilter = new FilterRegistrationBean();
     authFilter.setFilter(new TraceFilter());
     return authFilter;
+  }
+
+  @Bean
+  public ServletListenerRegistrationBean<MyListener> myServletListener() {
+    ServletListenerRegistrationBean<MyListener> myListener =
+        new ServletListenerRegistrationBean<MyListener>();
+    myListener.setListener(new MyListener());
+    return myListener;
   }
 
   public static void main(String[] args) {

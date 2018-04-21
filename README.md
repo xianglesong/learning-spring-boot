@@ -45,5 +45,5 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  mongodb: mongodb实例。
     *  elasticsearch: elasticsearch实例。
     
- ### [视频课程地址：] (http://study.163.com/instructor/825396.htm)
+ ### [视频课程地址：] (http://study.163.com/course/introduction/1005275015.htm)
     

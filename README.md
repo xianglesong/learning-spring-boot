@@ -33,6 +33,8 @@ Spring Boot的基础使用，基本原理，实例架构等。
 
 * 项目列表，通过git tag进行管理。
     *  hello-world: hello world项目实例。
+    *  profile: 配置管理项目实例。
+    *  logging: 日志项目实例。
 
     
  ### [视频课程地址：] (http://study.163.com/instructor/825396.htm)

@@ -21,12 +21,7 @@ Spring Boot的基础使用，基本原理，实例架构等。
 
 * Spring Boot
 * 提供Spring Boot的开发架构
-    * Hello-World
-    * MySql
-    * Redis
-    * RabbitMQ
-    * MongoDB
-    * ElasticSearch
+
 
 ## 
 ### 免费Q群：557373922。

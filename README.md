@@ -39,6 +39,9 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  rabbitmq-async: rabbitmq异步传输。
     *  mongodb: mongodb实例。
     *  elasticsearch: elasticsearch实例。
+    *  kafka: kafka收发实例。
+    *  test: springboot如何测试实例。
+    
     
  ### [视频课程地址：] (http://study.163.com/course/introduction/1005275015.htm)
     

@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.xianglesong.rabbitmq.MQSend;
 
 @RestController
-public class RedisController {
+public class MQController {
 
-  public static final Logger logger = LoggerFactory.getLogger(RedisController.class);
+  public static final Logger logger = LoggerFactory.getLogger(MQController.class);
 
   @Autowired
   MQSend mqSend;

@@ -11,10 +11,6 @@ import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * Created by rollin on 18/3/23.
- */
-
 @Component
 // @Slf4j
 public class KafkaReceiver {
@@ -26,4 +22,31 @@ public class KafkaReceiver {
     System.out.println("------------------ message =" + message);
     System.out.println("msg payload: " + msg.getMsg());
   }
+
+  // @KafkaListener(id = "id1", topics = "tester")
+  // public void listen4ack(@Payload String message, Acknowledgment ack) {
+  // Gson gson = new Gson();
+  // Message msg = gson.fromJson(message.toString(), Message.class);
+  // log.info("yy ------------------ message =" + message);
+  // log.info("msg payload: " + msg.getMsg());
+  // ack.acknowledge();
+  // }
+
+  // @KafkaListener(topics = {"tester"})
+  // public void listen(ConsumerRecord<?, ?> record) {
+  //
+  // Optional<?> kafkaMessage = Optional.ofNullable(record.value());
+  //
+  // if (kafkaMessage.isPresent()) {
+  //
+  // Object message = kafkaMessage.get();
+  //
+  // Gson gson = new Gson();
+  // Message msg = gson.fromJson(message.toString(), Message.class);
+  // log.info("xx ----------------- record =" + record);
+  // log.info("yy ------------------ message =" + message);
+  // log.info("msg: " + msg.getMsg());
+  // }
+  //
+  // }
 }

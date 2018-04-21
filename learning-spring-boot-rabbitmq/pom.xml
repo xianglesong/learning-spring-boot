@@ -1,10 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.xiangleosng</groupId>
-	<artifactId>learning-spring-boot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+
+	<artifactId>learning-spring-boot-rabbitmq</artifactId>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -22,15 +20,29 @@
 		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 	</properties>
 
-	<modules>
-		<module>learning-spring-boot-helloworld</module>
-		<module>learning-spring-boot-profile</module>
-		<module>learning-spring-boot-logging</module>
-		<module>learning-spring-boot-tomcat</module>
-		<module>learning-spring-boot-actuator</module>
-		<module>learning-spring-boot-mysql</module>
-		<module>learning-spring-boot-redis</module>
-		<module>learning-spring-boot-rabbitmq</module>
-	</modules>
+	<dependencies>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-amqp</artifactId>
+			<version>1.7.3.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit</artifactId>
+			<version>1.7.3.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.37</version>
+		</dependency>
+	</dependencies>
 </project>

@@ -37,7 +37,7 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  logging: 日志项目实例。
     *  tomcat: tomcat配置实例。
     *  actuator: 监控实例。
-
+    *  mysql: Mysql的JPA实例。
     
  ### [视频课程地址：] (http://study.163.com/instructor/825396.htm)
     

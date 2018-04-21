@@ -36,6 +36,7 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  profile: 配置管理项目实例。
     *  logging: 日志项目实例。
     *  tomcat: tomcat配置实例。
+    *  actuator: 监控实例。
 
     
  ### [视频课程地址：] (http://study.163.com/instructor/825396.htm)

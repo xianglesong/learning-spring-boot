@@ -31,9 +31,9 @@ public class StartApp {
 
   @Bean
   public FilterRegistrationBean traceFilterRegistration() {
-    FilterRegistrationBean authFilter = new FilterRegistrationBean();
-    authFilter.setFilter(new TraceFilter());
-    return authFilter;
+    FilterRegistrationBean traceFilter = new FilterRegistrationBean();
+    traceFilter.setFilter(new TraceFilter());
+    return traceFilter;
   }
 
   @Bean

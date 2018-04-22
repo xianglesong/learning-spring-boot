@@ -47,6 +47,7 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  integration: servlet实例。
     *  integration: filter实例。
     *  integration: listener实例。
+    *  thymeleaf: web的thymeleaf实例。
     
  ### [视频课程地址：] (http://study.163.com/course/introduction/1005275015.htm)
     

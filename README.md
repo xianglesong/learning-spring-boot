@@ -42,6 +42,11 @@ Spring Boot的基础使用，基本原理，实例架构等。
     *  kafka: kafka收发实例。
     *  test: springboot如何测试实例。
     *  release: springboot如何发布（打包，发布，启动，运行）。
+    *  integration: 全局error处理。
+    *  integration: 全局异常处理。
+    *  integration: servlet实例。
+    *  integration: filter实例。
+    *  integration: listener实例。
     
  ### [视频课程地址：] (http://study.163.com/course/introduction/1005275015.htm)
     

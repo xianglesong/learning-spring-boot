@@ -26,7 +26,7 @@ public class StartApp {
 
   @Bean
   public ServletRegistrationBean servletRegistrationBean() {
-    return new ServletRegistrationBean(new MyServlet());
+    return new ServletRegistrationBean(new MyServlet(), "/servlet/*");
   }
 
   @Bean

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = "/myservlet", description = "servelt 描述")
+//@WebServlet(urlPatterns = "/servlet", description = "servelt 描述")
 public class MyServlet extends HttpServlet {
 
   private static final org.slf4j.Logger logger = LoggerFactory.getLogger(MyServlet.class);

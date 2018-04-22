@@ -38,6 +38,7 @@
 		<module>learning-spring-boot-test</module>
 		<module>learning-spring-boot-release</module>
 		<module>learning-spring-boot-integration</module>
+		<module>learning-spring-boot-thymeleaf</module>
 	</modules>
 
 </project>

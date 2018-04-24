@@ -68,8 +68,11 @@
 		<appender-ref ref="errorFile" />
 		<appender-ref ref="STDOUT" />
 	</root>
-
-	<logger name="org.hibernate" level="WARN" />
-	<logger name="org.springframework" level="WARN" />
+  
+<!-- 	<logger name="org.hibernate" level="WARN" />
+	<logger name="org.springframework" level="WARN" /> -->
+	
+	 <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <logger name="org.springframework.web" level="DEBUG"/>
 
 </configuration>
